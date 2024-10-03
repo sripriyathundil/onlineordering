@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Ordering Website</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- boxicons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- aos animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animate style -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  </head>
+  <body>
+    <div id="container">
+      <!-- navbar -->
+      <nav class="nav">
+        <!-- logo -->
+        <img class="logo" src="./images/logo.png" alt="no image" />
+        <!-- checkbox -->
+        <input type="checkbox" id="check" />
+        <label for="check" class="icons">
+          <!-- menu icon -->
+          <i class="bx bx-menu" id="menuIcon"></i>
+          <!-- close icon -->
+          <i class="bx bx-x" id="closeIcon"></i>
+        </label>
+        <!-- links -->
+        <!-- <div class=""> -->
+        <ul class="navbar">
+          <li class="list-items"><a class="links" href="#home">Home</a></li>
+          <li class="list-items">
+            <a class="links" href="#features">Features</a>
+          </li>
+          <li class="list-items">
+            <a class="links" href="#products">Products</a>
+          </li>
+          <li class="list-items">
+            <a class="links" href="#categories">Categories</a>
+          </li>
+          <li class="list-items">
+            <a class="links" href="#reviews">Review</a>
+          </li>
+          <li class="list-items"><a class="links" href="#blogs">Blogs</a></li>
+        </ul>
+        <!-- icons -->
+        <ul class="navbar">
+          <li class="list">
+            <a class="icon" href=""
+              ><i class="fa-solid fa-magnifying-glass brands"></i
+            ></a>
+          </li>
+          <li class="list">
+            <a class="icon" href=""
+              ><i class="fa-solid fa-cart-shopping brands"></i
+            ></a>
+          </li>
+          <li class="list">
+            <a class="icon" href=""><i class="fa-solid fa-user brands"></i></a>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </nav>
+      <!-- home -->
+      <section id="home">
+        <!-- home content -->
+        <div class="homeContent">
+          <h1 data-aos="zoom-in-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" id="tag">
+            The Fastest In <br />
+            Delivering Your <span id="food">Groceries</span>
+          </h1>
+          <p id="details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit <br />Quae
+            rem architecto asperiores tenetur modi magnam eius
+          </p>
+          <a id="getStarted" href="#products">Get Started</a>
+        </div>
+        <!-- home image -->
+        <div class="homeImage">
+          <img src="./images/home image.png" alt="" />
+        </div>
+      </section>
+      <!-- features -->
+      <section id="features">
+        <!-- heading -->
+        <h1 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="featureHead">
+          Our <span class="featurePart">Features</span>
+        </h1>
+        <!-- cards -->
+        <div class="cards">
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/fresh.png" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Fresh and Organic</h1>
+            <!-- paragraph -->
+            <p class="cardPara">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit Saepe sed
+              sint illo.
+            </p>
+            <!-- readmore -->
+            <a id="readMore" href="">Read More</a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/delivery.png" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Free Delivery</h1>
+            <!-- paragraph -->
+            <p class="cardPara">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit Saepe sed
+              sint illo.
+            </p>
+            <!-- readmore -->
+            <a id="readMore" href="">Read More</a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/payment.png" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Easy Payments</h1>
+            <!-- paragraph -->
+            <p class="cardPara">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit Saepe sed
+              sint illo.
+            </p>
+            <!-- readmore -->
+            <a id="readMore" href="">Read More</a>
+          </div>
+        </div>
+      </section>
+      <!-- products -->
+      <section id="products">
+        <!-- heading -->
+        <h1 data-aos="fade-up"
+        data-aos-duration="3000" class="featureHead">
+          Our <span class="featurePart">Products</span>
+        </h1>
+        <!-- cards -->
+        <div class="cards">
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/orange.jpg" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Fresh Orange</h1>
+            <!-- paragraph -->
+            <p class="cardPara">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 20/- -
+              <i class="fa-solid fa-indian-rupee-sign"></i> 30/- <br />
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa-regular fa-star-half-stroke"></span>
+            </p>
+            <!-- readmore -->
+            <a id="readMore" href="">Add To Cart</a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/onion.png" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Fresh Onion</h1>
+            <!-- paragraph -->
+            <p class="cardPara">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 30/- -
+              <i class="fa-solid fa-indian-rupee-sign"></i> 40/- <br />
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa-regular fa-star-half-stroke"></span>
+            </p>
+            <!-- readmore -->
+            <a id="readMore" href="">Add To Cart</a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/meat.png" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Fresh Meat</h1>
+            <!-- paragraph -->
+            <p class="cardPara">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 160/- -
+              <i class="fa-solid fa-indian-rupee-sign"></i> 210/- <br />
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa-regular fa-star-half-stroke"></span>
+            </p>
+            <!-- readmore -->
+            <a id="readMore" href="">Add To Cart</a>
+          </div>
+        </div>
+      </section>
+      <!-- categories -->
+      <section id="categories">
+        <!-- heading -->
+        <h1 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="featureHead">
+          Product <span class="featurePart"> Categories</span>
+        </h1>
+        <!-- cards -->
+        <div class="cards">
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/vegetables.jpg" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Vegetables</h1>
+            <!-- paragraph -->
+            <p class="cardPara">Upto 45% Off</p>
+            <!-- readmore -->
+            <a id="shopNow" href="">Shop Now</a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/fruits.jpg" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Fresh Fruits</h1>
+            <!-- paragraph -->
+            <p class="cardPara">Upto 45% Off</p>
+            <!-- readmore -->
+            <a id="shopNow" href="">Shop Now</a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/dairy.png" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Dairy Products</h1>
+            <!-- paragraph -->
+            <p class="cardPara">Upto 45% Off</p>
+            <!-- readmore -->
+            <a id="shopNow" href="">Shop Now</a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="items" src="./images/fresh meat.png" alt="no image" />
+            <!-- heading -->
+            <h1 class="cardHead">Fresh Meat</h1>
+            <!-- paragraph -->
+            <p class="cardPara">Upto 45% Off</p>
+            <!-- readmore -->
+            <a id="shopNow" href="">Shop Now</a>
+          </div>
+        </div>
+      </section>
+      <!-- reviews -->
+      <section id="reviews">
+        <!-- heading -->
+        <h1 data-aos="zoom-in-right" class="featureHead">
+          Customer's <span class="featurePart"> Review</span>
+        </h1>
+        <!-- cards -->
+        <div class="cards">
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="customer" src="./images/customer1.png" alt="no image" />
+            <!-- paragraph -->
+            <p class="customPara">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio exercitationem ratione fuga nostrum repellendus, labore
+              magni culpa doloribus fugiat pariatur alias delectus repudiandae,
+              ducimus eaque quisquam quibusdam, iste aliquid nihil.
+            </p>
+            <!-- heading -->
+            <h1 class="cardHead">John Doe</h1>
+            <p class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa-regular fa-star-half-stroke"></span>
+            </p>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="customer" src="./images/customer2.png" alt="no image" />
+            <!-- paragraph -->
+            <p class="customPara">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio exercitationem ratione fuga nostrum repellendus, labore
+              magni culpa doloribus fugiat pariatur alias delectus repudiandae,
+              ducimus eaque quisquam quibusdam, iste aliquid nihil.
+            </p>
+            <!-- heading -->
+            <h1 class="cardHead">John Doe</h1>
+            <p class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa-regular fa-star-half-stroke"></span>
+            </p>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="customer" src="./images/customer3.png" alt="no image" />
+            <!-- paragraph -->
+            <p class="customPara">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio exercitationem ratione fuga nostrum repellendus, labore
+              magni culpa doloribus fugiat pariatur alias delectus repudiandae,
+              ducimus eaque quisquam quibusdam, iste aliquid nihil.
+            </p>
+            <!-- heading -->
+            <h1 class="cardHead">John Doe</h1>
+            <p class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa-regular fa-star-half-stroke"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- blogs -->
+      <section id="blogs">
+        <!-- heading -->
+        <h1 data-aos="zoom-in-up" class="featureHead">
+          Our <span class="featurePart"> Blogs</span>
+        </h1>
+        <!-- cards -->
+        <div class="cards">
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="blogs" src="./images/blog1.jpg" alt="no image" />
+            <!-- heading -->
+            <div class="user">
+              <p class="users"><i class="fa-solid fa-user"></i> <span class="etc">By User</span> </p>
+              <p class="calender"><i class="fa-solid fa-calendar-days"></i> <span class="etc">1st May, 2024</span></p>
+            </div>
+            <hr>
+            <!-- paragraph -->
+             <h1 class="para">Fresh and Organic Vegetables and Fruits</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus numquam quisquam, totam odit aspernatur</p>
+            <!-- readmore -->
+            <a id="read" href="">ReadMore</a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="blogs" src="./images/blog2.jpg" alt="no image" />
+            <!-- heading -->
+            <div class="user">
+              <p class="users"><i class="fa-solid fa-user"></i> <span class="etc">By User</span> </p>
+              <p class="calender"><i class="fa-solid fa-calendar-days"></i> <span class="etc">1st May, 2024</span></p>
+            </div>
+            <hr>
+            <!-- paragraph -->
+             <h1 class="para">Fresh and Organic Vegetables and Fruits</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus numquam quisquam, totam odit aspernatur</p>
+            <!-- readmore -->
+            <a id="read" href="">ReadMore</a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="category">
+            <!-- image -->
+            <img class="blogs" src="./images/blog3.jpg" alt="no image" />
+            <!-- heading -->
+            <div class="user">
+              <p class="users"><i class="fa-solid fa-user"></i> <span class="etc">By User</span> </p>
+              <p class="calender"><i class="fa-solid fa-calendar-days"></i> <span class="etc">1st May, 2024</span></p>
+            </div>
+            <hr>
+            <!-- paragraph -->
+             <h1 class="para">Fresh and Organic Vegetables and Fruits</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus numquam quisquam, totam odit aspernatur</p>
+            <!-- readmore -->
+            <a id="read" href="">ReadMore</a>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer>
+        <div  class="footer">
+          <div>
+            <h3>Quick Links</h3>
+            <p class="quickLinks"><a class="footerlink" href="#home">Home</a></p>
+            <p class="quickLinks"><a class="footerlink" href="#features">Features</a></p>
+            <p class="quickLinks"><a class="footerlink" href="#products">Products</a></p>
+            <p class="quickLinks"><a class="footerlink" href="#categories">Categories</a></p>
+            <p class="quickLinks"><a class="footerlink" href="#reviews">Reviews</a></p>
+            <p class="quickLinks"><a class="footerlink" href="#blogs">Blogs</a></p>
+          </div>
+          <div class="contact">
+            <h3 class="contactHead">Contact Us</h3>
+            <a class="contactIcon" href=""><i class="fa-brands fa-instagram"></i> Instagram</a> <br>
+            <a class="contactIcon" href=""><i class="fa-brands fa-facebook"></i> Facebook</a> <br>
+            <a class="contactIcon" href=""><i class="fa-brands fa-twitter"></i> Twitter</a> <br>
+            <a class="contactIcon" href=""><i class="fa-solid fa-envelope"></i> Mail</a>
+          </div>
+          <div class="feedback">
+            <h3 class="feedbackHead">Feedback</h3>
+            <form class="feedbackform" action="">
+              <label for="">Name    : </label>
+              <input type="text" placeholder="Enter your Name">
+              <br><br>
+              <label for="">Email     : </label>
+              <input type="email" placeholder="Enter your Email id">
+              <br><br>
+              <label for="">Feedback: </label>
+              <textarea name="" id="" placeholder="Enter your Feedback"></textarea>
+            </form>
+          </div>
+        </div>
+        <div class="icon upArrow">
+          <a href="#container"><i class="fa-solid fa-angle-up brands"></i></a>    
+         </div>
+       </footer>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
